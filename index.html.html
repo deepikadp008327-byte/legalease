@@ -1,0 +1,35 @@
+<section class="document-box">
+    <h2>Legal Document Generator</h2>
+    
+    <!-- Select Document Type -->
+    <label for="docType">Choose Document Type:</label>
+    <select id="docType">
+        <option value="rental">Rental Agreement</option>
+        <option value="nda">Non-Disclosure Agreement (NDA)</option>
+        <option value="employment">Employment Contract</option>
+    </select>
+    <br><br>
+
+    <!-- Details Inputs -->
+    <label for="partyA">First Party Name (Owner / Employer / Company):</label>
+    <input type="text" id="partyA" placeholder="e.g. John Doe"><br><br>
+
+    <label for="partyB">Second Party Name (Tenant / Employee / Client):</label>
+    <input type="text" id="partyB" placeholder="e.g. Jane Smith"><br><br>
+
+    <label for="details">Additional Details / Terms:</label>
+    <textarea id="details" placeholder="e.g. Monthly rent: ₹15,000, Duration: 11 months"></textarea><br><br>
+
+    <!-- Action Button -->
+    <button onclick="generateDocument()">Generate Document</button>
+
+    <!-- Result Area -->
+    <div id="result" class="result">
+        <h3>Generated Document Output</h3>
+        <p id="resultText">Your generated document will appear here...</p>
+    </div>
+    <button type="button"onclick="window.print()"style="margin-top:  15px; background-colour: #28oa745;">
+        print/download PDF
+    </button>
+</section>
+<script src="pro.js"></script>
